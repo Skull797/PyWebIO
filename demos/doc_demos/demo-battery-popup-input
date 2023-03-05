@@ -1,0 +1,10 @@
+Blocking form in the popup.
+
+from pywebio_battery import popup_input  # ..demo-only
+# ..demo-only
+form = popup_input([
+    put_input("username", label="User name"),
+    put_input("password", type=PASSWORD, label="Password"),
+    put_info("If you forget your password, please contact the administrator."),
+], "Login")
+put_text("Login info:", form)
